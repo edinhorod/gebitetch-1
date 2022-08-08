@@ -13,8 +13,9 @@ export const Home = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Bem vindos à Gebitech</Text>
       <TouchableOpacity style={styles.button} activeOpacity={0.7} onPress={showPagina2}>
-        <Text style={styles.buttonText}>Página 2</Text>
+        <Text style={styles.buttonText}>Ir para Página 2</Text>
       </TouchableOpacity>
     </View>
   );
@@ -27,6 +28,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 10,
+  },
+  title: {
+    fontSize: 18,
+    color: theme.color.primary,
+    fontWeight: "bold",
+    marginVertical: 15,
   },
   button: {
     backgroundColor: theme.color.primary,
